@@ -45,6 +45,7 @@ object Dependencies{
     private const val composeBomVersion = "2022.10.00"
     private const val composeActivityVersion = "1.5.1"
     private const val composeViewModelVersion = "2.5.1"
+    private const val accompanistPagerVersion = "0.27.1"
 
     const val lifecyclerLiveDataCore = "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycleVersion"
     const val lifeCycleExtension = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
@@ -106,4 +107,5 @@ object Dependencies{
     const val composeBom = "androidx.compose:compose-bom:$composeBomVersion"
     const val composeActivity = "androidx.activity:activity-compose:$composeActivityVersion"
     const val composeViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:$composeViewModelVersion"
+    const val accompanistPager = "com.google.accompanist:accompanist-pager:$accompanistPagerVersion"
 }

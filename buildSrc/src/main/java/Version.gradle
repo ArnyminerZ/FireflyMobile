@@ -96,5 +96,8 @@ ext {
         implementation Dependencies.composeActivity
         implementation Dependencies.composeViewModel
         implementation 'androidx.compose.runtime:runtime-livedata'
+
+        // Accompanist dependencies
+        implementation Dependencies.accompanistPager
     }
 }
