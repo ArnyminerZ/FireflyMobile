@@ -207,4 +207,10 @@
     <string name="capture_image_from_camera">Capture image from camera</string>
     <string name="choose_file">Choose file</string>
     <string name="group">Group</string>
+
+    <string name="auth_sign_in_using">Sign In Using…</string>
+    <string name="auth_sign_in_pat">Personal Access Token</string>
+    <string name="auth_sign_in_oauth">OAuth</string>
+
+    <string name="image_desc_auth_help">Help</string>
 </resources>
