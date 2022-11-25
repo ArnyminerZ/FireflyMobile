@@ -42,6 +42,9 @@ object Dependencies{
     private const val calendarViewVersion = "2.0.4"
     private const val pagingLibVersion = "3.1.1"
     private const val viewPager2Version = "1.1.0-beta01"
+    private const val composeBomVersion = "2022.10.00"
+    private const val composeActivityVersion = "1.5.1"
+    private const val composeViewModelVersion = "2.5.1"
 
     const val lifecyclerLiveDataCore = "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycleVersion"
     const val lifeCycleExtension = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
@@ -100,4 +103,7 @@ object Dependencies{
     const val calendarView = "com.kizitonwose.calendar:view:$calendarViewVersion"
     const val pagingLib = "androidx.paging:paging-runtime-ktx:$pagingLibVersion"
     const val viewPager2Lib = "androidx.viewpager2:viewpager2:$viewPager2Version"
+    const val composeBom = "androidx.compose:compose-bom:$composeBomVersion"
+    const val composeActivity = "androidx.activity:activity-compose:$composeActivityVersion"
+    const val composeViewModel = "androidx.lifecycle:lifecycle-viewmodel-compose:$composeViewModelVersion"
 }

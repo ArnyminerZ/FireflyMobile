@@ -69,4 +69,32 @@ ext {
         androidTestImplementation Dependencies.androidTest
         androidTestUtil Dependencies.testOrchestrator
     }
+
+    jetpackCompose = Group {
+        def composeBom = platform(Dependencies.composeBom)
+        implementation composeBom
+        androidTestImplementation composeBom
+
+        // Material 3
+        implementation 'androidx.compose.material3:material3'
+
+        // Android Studio Preview
+        implementation 'androidx.compose.ui:ui-tooling-preview'
+        debugImplementation 'androidx.compose.ui:ui-tooling'
+
+        // UI Tests
+        androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
+        debugImplementation 'androidx.compose.ui:ui-test-manifest'
+
+        // Icons extended
+        implementation 'androidx.compose.material:material-icons-extended'
+
+        // Window size utils
+        implementation 'androidx.compose.material3:material3-window-size-class'
+
+        // Integrations
+        implementation Dependencies.composeActivity
+        implementation Dependencies.composeViewModel
+        implementation 'androidx.compose.runtime:runtime-livedata'
+    }
 }
