@@ -1,5 +1,7 @@
 package xyz.hisname.fireflyiii.ui.theme
 
+import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme
@@ -86,4 +88,15 @@ fun AppTheme(
         colorScheme = colors,
         content = content
     )
+}
+
+/**
+ * Sets the content of the app using the [AppTheme].
+ * @author Arnau Mora
+ * @since 20221125
+ */
+fun AppCompatActivity.setContentThemed(
+    content: @Composable () -> Unit,
+) {
+    setContent { AppTheme(content = content) }
 }
